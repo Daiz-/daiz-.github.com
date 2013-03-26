@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://Daiz-.github.com/blog/2013/02/26/dont-buy-the-snake-oil-of-beamr-video/</loc>
+        <lastmod>2013-03-26T15:35:16+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://Daiz-.github.com/blog/archives/</loc>
-        <lastmod>2013-03-26T14:32:22+02:00</lastmod>
+        <lastmod>2013-03-26T15:35:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://Daiz-.github.com/</loc>
-        <lastmod>2013-03-26T14:32:22+02:00</lastmod>
+        <lastmod>2013-03-26T15:35:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://Daiz-.github.com/robots.txt</loc>
