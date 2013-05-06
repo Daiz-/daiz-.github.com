@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Snake Oil | Technodrome]]></title>
-  <link href="http://Daiz-.github.com/blog/categories/snake-oil/atom.xml" rel="self"/>
-  <link href="http://Daiz-.github.com/"/>
-  <updated>2013-03-26T15:41:56+02:00</updated>
-  <id>http://Daiz-.github.com/</id>
+  <link href="http://daiz.io/blog/categories/snake-oil/atom.xml" rel="self"/>
+  <link href="http://daiz.io/"/>
+  <updated>2013-05-06T21:47:32+03:00</updated>
+  <id>http://daiz.io/</id>
   <author>
     <name><![CDATA[Daiz]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Don't Buy the Snake Oil of Beamr Video]]></title>
-    <link href="http://Daiz-.github.com/blog/2013/02/26/dont-buy-the-snake-oil-of-beamr-video/"/>
+    <link href="http://daiz.io/blog/2013/02/26/dont-buy-the-snake-oil-of-beamr-video/"/>
     <updated>2013-02-26T22:50:00+02:00</updated>
-    <id>http://Daiz-.github.com/blog/2013/02/26/dont-buy-the-snake-oil-of-beamr-video</id>
+    <id>http://daiz.io/blog/2013/02/26/dont-buy-the-snake-oil-of-beamr-video</id>
     <content type="html"><![CDATA[<p>You might have heard of <strong><a href="http://beamrvideo.com/">Beamr Video</a></strong>, and their impressive claims about reducing video bitrates by <em>"up to 4x, without losing quality"</em>. Sounds too good to be true? Well, as a matter of fact, it is.</p>
 
 <!-- more -->

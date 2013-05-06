@@ -1,19 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://Daiz-.github.com/blog/2013/02/26/dont-buy-the-snake-oil-of-beamr-video/</loc>
+        <loc>http://daiz.io/blog/2013/02/26/dont-buy-the-snake-oil-of-beamr-video/</loc>
         <lastmod>2013-03-26T15:35:16+02:00</lastmod>
     </url>
     <url>
-        <loc>http://Daiz-.github.com/blog/archives/</loc>
-        <lastmod>2013-03-26T15:35:16+02:00</lastmod>
+        <loc>http://daiz.io/blog/2013/03/26/the-state-of-html5-video-color-accuracy/</loc>
+        <lastmod>2013-04-04T15:14:07+03:00</lastmod>
     </url>
     <url>
-        <loc>http://Daiz-.github.com/</loc>
-        <lastmod>2013-03-26T15:35:16+02:00</lastmod>
+        <loc>http://daiz.io/blog/archives/</loc>
+        <lastmod>2013-04-04T15:14:07+03:00</lastmod>
     </url>
     <url>
-        <loc>http://Daiz-.github.com/robots.txt</loc>
+        <loc>http://daiz.io/</loc>
+        <lastmod>2013-04-04T15:14:07+03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://daiz.io/robots.txt</loc>
         <lastmod>2013-03-26T14:32:22+02:00</lastmod>
     </url>
 </urlset>

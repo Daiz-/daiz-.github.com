@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://Daiz-.github.com/sitemap.xml 
+Sitemap: http://daiz.io/sitemap.xml 
