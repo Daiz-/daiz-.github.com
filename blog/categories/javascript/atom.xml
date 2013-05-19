@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JavaScript | Technodrome]]></title>
   <link href="http://daiz.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://daiz.io/"/>
-  <updated>2013-05-19T19:33:47+03:00</updated>
+  <updated>2013-05-19T19:36:17+03:00</updated>
   <id>http://daiz.io/</id>
   <author>
     <name><![CDATA[Daiz]]></name>
@@ -39,6 +39,8 @@
 <p>Unfortunately, GitHub has a Content Security Policy for <code>script-src</code> in place, which prevents inline <code>&lt;script&gt;</code> elemets from running. As a workaround, I made a <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d">gist</a> and embedded a script that pointed to its <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d/raw/fea70365ef1281e09959914a8c765efb2d5a1db8/embed.js">raw version</a>, and voilà, my script was running and the Live Preview button had a pretty tooltip!</p>
 
 <p>As far as weekend projects go, this one was quite successful. Enjoy the script!</p>
+
+<h4>Discuss this post on <a href="https://news.ycombinator.com/item?id=5733360">Hacker News</a>.</h4>
 ]]></content>
   </entry>
   
