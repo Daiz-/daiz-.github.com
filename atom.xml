@@ -4,7 +4,7 @@
   <title><![CDATA[Technodrome]]></title>
   <link href="http://daiz.io/atom.xml" rel="self"/>
   <link href="http://daiz.io/"/>
-  <updated>2013-05-19T19:28:59+03:00</updated>
+  <updated>2013-05-19T19:33:47+03:00</updated>
   <id>http://daiz.io/</id>
   <author>
     <name><![CDATA[Daiz]]></name>
@@ -31,12 +31,12 @@
 
 <p>The script itself is written in <a href="http://livescript.net/">LiveScript</a>, a fantastic flavor of CoffeeScript. The script makes heavy use of <a href="https://github.com/chjj/marked">marked</a> and <a href="https://github.com/isagalaev/highlight.js">highlight.js</a> to parse and format the text. The icon comes from <a href="http://shoestrap.org/downloads/elusive-icons-webfont/">Elusive</a>, and was cut with the fantastic <a href="http://fontello.com/">Fontello</a>.</p>
 
-<p>A slightly amusing hack: I wanted the Live Preview button to have a similar tooltip as the Zen Mode button. I figured the easiest way would be to inject an inline script to the page with the following code in it:</p>
+<p>A slightly amusing hack: I wanted the Live Preview button to have a nice tooltip like the Zen Mode button has. I figured the easiest way would be to inject an inline script to the page with the following code in it:</p>
 
 <pre><code>$('.js-toggle-live-preview').tipsy({gravity: 'e'});
 </code></pre>
 
-<p>Unfortunately, GitHub has a Content Security Policy for <code>script-src</code> in place, which disables inline <code>&lt;script&gt;</code> elemets from running. As a workaround, I made a <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d">gist</a> and embedded a script that pointed to its <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d/raw/fea70365ef1281e09959914a8c765efb2d5a1db8/embed.js">raw version</a>, and voilà, my script was running and the Live Preview button had a pretty tooltip!</p>
+<p>Unfortunately, GitHub has a Content Security Policy for <code>script-src</code> in place, which prevents inline <code>&lt;script&gt;</code> elemets from running. As a workaround, I made a <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d">gist</a> and embedded a script that pointed to its <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d/raw/fea70365ef1281e09959914a8c765efb2d5a1db8/embed.js">raw version</a>, and voilà, my script was running and the Live Preview button had a pretty tooltip!</p>
 
 <p>As far as weekend projects go, this one was quite successful. Enjoy the script!</p>
 ]]></content>
