@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: LiveScript | Technodrome]]></title>
+  <link href="http://daiz.io/blog/categories/livescript/atom.xml" rel="self"/>
+  <link href="http://daiz.io/"/>
+  <updated>2013-05-19T19:28:59+03:00</updated>
+  <id>http://daiz.io/</id>
+  <author>
+    <name><![CDATA[Daiz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Live Markdown Preview for GitHub]]></title>
+    <link href="http://daiz.io/blog/2013/05/19/live-markdown-preview-for-github/"/>
+    <updated>2013-05-19T18:56:00+03:00</updated>
+    <id>http://daiz.io/blog/2013/05/19/live-markdown-preview-for-github</id>
+    <content type="html"><![CDATA[<p>A minor annoyance with <a href="https://github.com">GitHub</a>: When you're writing comments and you want to preview them, you have to hit a separate preview button and wait for the server to generate a formatted preview. Having to manually switch between writing and previewing is not very optimal, so I decided to do something about it.</p>
+
+<!-- more -->
+
+
+<p>Enter <a href="https://github.com/Daiz-/GitHub-LiveMarkdown"><strong>Live Markdown Preview for GitHub</strong></a>, a userscript that adds a live preview box right underneath your comment:</p>
+
+<p><img src="https://f.cloud.github.com/assets/3596343/523229/3e6bb6ae-c0a1-11e2-9847-211c7bddb9bf.png" alt="Live Preview in action - It updates in realtime as you type." /></p>
+
+<p>If you'd like to have it yourself, check out the <a href="https://github.com/Daiz-/GitHub-LiveMarkdown">GitHub repository</a> for installation instructions. I've tested it in Chrome and Firefox, but it should likely work in other browsers that support userscripts as well. At the time of writing (v0.1.2) it's still missing some features, but even in its current form it should prove rather helpful with its instant feedback.</p>
+
+<p>The script itself is written in <a href="http://livescript.net/">LiveScript</a>, a fantastic flavor of CoffeeScript. The script makes heavy use of <a href="https://github.com/chjj/marked">marked</a> and <a href="https://github.com/isagalaev/highlight.js">highlight.js</a> to parse and format the text. The icon comes from <a href="http://shoestrap.org/downloads/elusive-icons-webfont/">Elusive</a>, and was cut with the fantastic <a href="http://fontello.com/">Fontello</a>.</p>
+
+<p>A slightly amusing hack: I wanted the Live Preview button to have a similar tooltip as the Zen Mode button. I figured the easiest way would be to inject an inline script to the page with the following code in it:</p>
+
+<pre><code>$('.js-toggle-live-preview').tipsy({gravity: 'e'});
+</code></pre>
+
+<p>Unfortunately, GitHub has a Content Security Policy for <code>script-src</code> in place, which disables inline <code>&lt;script&gt;</code> elemets from running. As a workaround, I made a <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d">gist</a> and embedded a script that pointed to its <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d/raw/fea70365ef1281e09959914a8c765efb2d5a1db8/embed.js">raw version</a>, and voilà, my script was running and the Live Preview button had a pretty tooltip!</p>
+
+<p>As far as weekend projects go, this one was quite successful. Enjoy the script!</p>
+]]></content>
+  </entry>
+  
+</feed>

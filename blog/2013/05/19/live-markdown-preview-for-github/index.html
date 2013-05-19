@@ -1,0 +1,149 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Live Markdown Preview for GitHub - Technodrome</title>
+	<meta name="author" content="Daiz">
+
+	
+	<meta name="description" content="Live Markdown Preview for GitHub A minor annoyance with GitHub: When you&#8217;re writing comments and you want to preview them, you have to hit a &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Technodrome" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://daiz.io/blog/2013/05/19/live-markdown-preview-for-github/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("taneli.vatanen@gmail.com") + "?s=160' alt='Profile Picture' style='width: 160px;'");
+	</script>
+</div>
+<h1><a href="/">Technodrome</a></h1>
+<p class="subtitle">Is out of fuel again.</p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/Daiz42" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/Daiz-" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+<!--<hgroup>
+  <h1><a href="/">Technodrome</a></h1>
+  
+    <h2>Is out of fuel again.</h2>
+  
+</hgroup>
+-->
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Live Markdown Preview for GitHub</h1>
+	<div class="entry-content" itemprop="articleBody"><p>A minor annoyance with <a href="https://github.com">GitHub</a>: When you&#8217;re writing comments and you want to preview them, you have to hit a separate preview button and wait for the server to generate a formatted preview. Having to manually switch between writing and previewing is not very optimal, so I decided to do something about it.</p>
+
+<!-- more -->
+
+
+<p>Enter <a href="https://github.com/Daiz-/GitHub-LiveMarkdown"><strong>Live Markdown Preview for GitHub</strong></a>, a userscript that adds a live preview box right underneath your comment:</p>
+
+<p><img src="https://f.cloud.github.com/assets/3596343/523229/3e6bb6ae-c0a1-11e2-9847-211c7bddb9bf.png" alt="Live Preview in action - It updates in realtime as you type." /></p>
+
+<p>If you&#8217;d like to have it yourself, check out the <a href="https://github.com/Daiz-/GitHub-LiveMarkdown">GitHub repository</a> for installation instructions. I&#8217;ve tested it in Chrome and Firefox, but it should likely work in other browsers that support userscripts as well. At the time of writing (v0.1.2) it&#8217;s still missing some features, but even in its current form it should prove rather helpful with its instant feedback.</p>
+
+<p>The script itself is written in <a href="http://livescript.net/">LiveScript</a>, a fantastic flavor of CoffeeScript. The script makes heavy use of <a href="https://github.com/chjj/marked">marked</a> and <a href="https://github.com/isagalaev/highlight.js">highlight.js</a> to parse and format the text. The icon comes from <a href="http://shoestrap.org/downloads/elusive-icons-webfont/">Elusive</a>, and was cut with the fantastic <a href="http://fontello.com/">Fontello</a>.</p>
+
+<p>A slightly amusing hack: I wanted the Live Preview button to have a similar tooltip as the Zen Mode button. I figured the easiest way would be to inject an inline script to the page with the following code in it:</p>
+
+<pre><code>$('.js-toggle-live-preview').tipsy({gravity: 'e'});
+</code></pre>
+
+<p>Unfortunately, GitHub has a Content Security Policy for <code>script-src</code> in place, which disables inline <code>&lt;script&gt;</code> elemets from running. As a workaround, I made a <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d">gist</a> and embedded a script that pointed to its <a href="https://gist.github.com/Daiz-/0146e783887fea4c462d/raw/fea70365ef1281e09959914a8c765efb2d5a1db8/embed.js">raw version</a>, and voilà, my script was running and the Live Preview button had a pretty tooltip!</p>
+
+<p>As far as weekend projects go, this one was quite successful. Enjoy the script!</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner"><p>
+  Copyright &copy; 2013 - Daiz -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
